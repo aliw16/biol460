@@ -1,0 +1,436 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Nervous System Exam Prep</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light;--bg:#f3f7fd;--fg:#1f2a44;--card:#fff;--mut:#6a7893;--ac:#d6336c;--ok:#1f9d6b;--bd:#dbe4f3;--pr:#4c6ef5}
+
+
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:760px;margin:0 auto;padding:14px}
+h1{font-size:20px;margin:4px 0 10px}
+nav{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+button{font:inherit;border:1px solid var(--bd);background:var(--card);color:var(--fg);padding:8px 12px;border-radius:10px;cursor:pointer}
+button.on{background:var(--fg);color:var(--bg)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px;margin:10px 0}
+.fc{min-height:200px;display:flex;flex-direction:column;justify-content:center;cursor:pointer;font-size:18px}
+.tag{font-size:12px;color:var(--mut);margin-bottom:8px}.star{color:var(--ac);font-weight:700}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.ok{border-color:var(--ok);color:var(--ok)}.no{border-color:var(--ac);color:var(--ac)}
+.opt{display:block;width:100%;text-align:left;margin:6px 0}.right{border-color:var(--ok);background:rgba(45,125,70,.15)}.wrong{border-color:var(--ac);background:rgba(179,32,42,.12)}
+table{width:100%;border-collapse:collapse;font-size:14px}td,th{border-bottom:1px solid var(--bd);padding:8px 4px;text-align:left;vertical-align:top}
+td.h{color:transparent;background:var(--bd);cursor:pointer;border-radius:6px}
+.small{font-size:13px;color:var(--mut)}
+details{margin:8px 0}summary{cursor:pointer;font-weight:600}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin:8px 0}.flow span{background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:4px 8px;font-size:13px}.flow i{color:var(--mut);font-style:normal}.flow b.r{color:var(--ac)}h3{margin:14px 0 4px;font-size:15px}ul{margin:4px 0;padding-left:20px;font-size:14px}
+body{background:linear-gradient(180deg,#e9f0ff 0,#f3f7fd 320px)}
+.hero{background:linear-gradient(135deg,#4c6ef5,#7950f2);color:#fff;border-radius:18px;padding:18px 20px;margin:6px 0 12px;box-shadow:0 8px 24px rgba(76,110,245,.25)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:rgba(243,247,253,.92);backdrop-filter:blur(6px);padding:8px 0;z-index:5}
+button{border-radius:999px;transition:all .15s;font-size:14px;padding:7px 13px}button:hover{border-color:var(--pr);color:var(--pr)}
+button.on{background:var(--pr);border-color:var(--pr);color:#fff}button.on:hover{color:#fff}
+.card{border-radius:18px;box-shadow:0 3px 14px rgba(76,110,245,.09)}
+.opt{border-radius:12px;padding:10px 14px}
+th{color:var(--pr);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+tr:nth-child(even) td{background:#f7f9ff}td.h{background:#dbe4f3}
+.flow span{background:#eef2ff;border-color:#c9d6ff;color:#34408a}
+summary{color:#34408a;font-size:16px}.fc{background:linear-gradient(160deg,#fff,#f4f7ff)}
+.tag{text-transform:uppercase;letter-spacing:.05em}.ok{background:#e8f8f1}.no{background:#fff0f5}
+#q{color:#1f2a44;-webkit-text-fill-color:#1f2a44;caret-color:#4c6ef5;font-size:16px;width:100%;box-sizing:border-box;font:inherit;padding:12px 18px;border:1px solid var(--bd);border-radius:999px;background:#fff;margin:0 0 4px;outline:none;box-shadow:0 2px 8px rgba(76,110,245,.08)}#q:focus{border-color:var(--pr);box-shadow:0 0 0 3px rgba(76,110,245,.18)}
+mark{background:#ffe58f;border-radius:3px;padding:0 2px;color:inherit}
+.bi{font:inherit;border:0;border-bottom:2px solid var(--pr);background:#eef2ff;color:#1f2a44;-webkit-text-fill-color:#1f2a44;border-radius:6px;padding:2px 6px;margin:0 2px;text-align:center;outline:none}.bi.right{background:#d3f9e4;border-color:var(--ok)}.bi.wrong{background:#ffe3ec;border-color:var(--ac)}
+.bt{width:100%;box-sizing:border-box;min-height:200px;font:inherit;font-size:16px;color:#1f2a44;-webkit-text-fill-color:#1f2a44;background:#fff;border:1px solid var(--bd);border-radius:14px;padding:12px;margin:8px 0}
+.bl{margin:10px 0;line-height:2.1}
+</style></head><body><main>
+<div class="hero"><h1 style="margin:0;color:#fff">🧠 Nervous System Exam Prep</h1><div style="opacity:.92;font-size:14px;margin-top:4px">Ch. 7 + 8 · ★ red ink · SG study guide · Kahoots</div></div>
+<input id="q" type="search" placeholder="🔍 Search any term: EPSP, curare, Broca, CSF…" oninput="doS()" autocomplete="off"><nav id="nav"></nav><div id="v"></div>
+<p class="small">★ = red ink in your slides (will be on exam). SG = covered in the study guide (top priority). Cards with neither are the rest of the lecture material. Progress saves in this browser.</p>
+</main>
+<script>
+// [topic, star, question, answer]
+const C=[
+["Embryo",1,"Telencephalon gives rise to (walls + cavities)?","Cerebral hemispheres + lateral ventricles"],
+["Embryo",1,"Diencephalon gives rise to?","Thalamus, hypothalamus + third ventricle"],
+["Embryo",0,"Mesencephalon gives rise to?","Midbrain + cerebral aqueduct (doesn't subdivide)"],
+["Embryo",0,"Metencephalon / myelencephalon give rise to?","Pons, cerebellum, upper 4th ventricle / medulla oblongata, lower 4th ventricle"],
+["Embryo",0,"Three primary vesicles (week 4) → five secondary (week 5)?","Prosencephalon→telen+dien; Mesencephalon→mesen; Rhombencephalon→meten+myelen"],
+["Embryo",0,"Neural tube vs neural crest become?","Neural tube → CNS (forms ~day 20 from ectoderm groove). Neural crest → PNS ganglia"],
+["CSF",0,"Path of CSF","Choroid plexus → lateral ventricles → interventricular foramina → 3rd ventricle → cerebral aqueduct → 4th ventricle → central canal / subarachnoid space → arachnoid villi/granulations → dural sinuses → blood"],
+["CSF",0,"How is CSF made? What forms the choroid plexus?","Active secretion (ions transported, water follows), not filtration. Ependymal cells around capillaries; tight junctions help form the BBB"],
+["Neurons",0,"Sensory vs motor vs interneuron","Afferent (receptor→CNS) / efferent (CNS→effector) / entirely within CNS (association)"],
+["Neurons",0,"Ganglion vs nucleus vs tract vs nerve","Ganglion = cell bodies in PNS; nucleus = cell bodies in CNS; tract = axons in CNS; nerve = axons in PNS"],
+["Neurons",0,"Pseudounipolar / bipolar / multipolar","Sensory, T-shaped / special senses (retina, olfaction) / most CNS + motor neurons"],
+["Neurons",0,"Axonal transport","Anterograde = kinesin, nucleus→terminal. Retrograde = dynein, terminal→cell body (tetanus toxin and rabies ride this)"],
+["Glia",0,"Schwann vs oligodendrocyte","Schwann: PNS, 1 cell myelinates 1 axon segment. Oligodendrocyte: CNS, 1 cell myelinates many axons"],
+["Glia",0,"Microglia / ependymal / satellite cells","Phagocytes of CNS / line ventricles, make CSF (choroid plexus) / support ganglia cell bodies in PNS"],
+["Glia",0,"Astrocyte functions (list 5)","Take up K+ and glutamate (recycle to glutamine→GABA); end-feet take up glucose, give lactate to neurons; form BBB; regulate neurogenesis; synapse formation; gliotransmitters"],
+["Glia",1,"PNS regeneration (1 exam question)","Distal part degenerates + is phagocytosed; Schwann cells form regeneration tube; axon regrows, but only if cut ends are close to target organ. CNS: Nogo (from oligodendrocytes) inhibits regrowth"],
+["Glia",0,"Demyelinating diseases","Guillain-Barré: T cells attack PNS myelin. MS: autoimmune attack on CNS myelin"],
+["AP",0,"Resting potential and what sets it","≈ −70 mV: Na+/K+ pump, K+ leak channels (high K+ inside, Na+ outside), large negative molecules inside"],
+["AP",0,"Steps of an action potential","Depolarize to threshold (~−55 mV) → voltage-gated Na+ open (positive feedback) → peak ≈ +40 → Na+ inactivate, K+ open → repolarize → hyperpolarize"],
+["AP",0,"All-or-none: how is intensity coded?","Amplitude never changes; brain reads frequency of APs and number of neurons recruited"],
+["AP",0,"Refractory periods","Absolute: no AP possible (Na+ channels inactivated). Relative: stronger stimulus needed. Ensures one-way travel + caps frequency"],
+["AP",0,"Why does myelin speed conduction? Speeds?","Saltatory conduction: AP regenerates only at nodes of Ranvier (every 1–2 mm). Also bigger diameter. Thin unmyelinated ≈1 m/s, thick myelinated ≈100 m/s"],
+["AP",1,"Graded potentials (EPSPs) as they move toward the axon hillock","They degrade in strength; must still reach ≈ −55 mV at the initial segment"],
+["AP",0,"K+ channel types","Leak channels (always open) vs voltage-gated K+ (open at specific potentials). Na+: no leak, only voltage-gated"],
+["Synapse",1,"Which ion movements make EPSP vs IPSP?","EPSP: Na+ influx, Ca2+ influx. IPSP: K+ efflux, Cl− influx"],
+["Synapse",0,"Steps of chemical synaptic transmission","AP at terminal → voltage-gated Ca2+ open → vesicles fuse, NT released → binds postsynaptic receptor → EPSP/IPSP → NT cleared (enzyme, reuptake, glia)"],
+["Synapse",0,"EPSP vs action potential","EPSP: graded, local, summates, no refractory period. AP: all-or-none, regenerated, no summation, refractory"],
+["Synapse",0,"Electrical synapse","Gap junctions (connexins) span two cells' membranes; two-way, fast"],
+["Synapse",0,"Ligand-gated vs G-protein coupled","Ligand-gated: receptor IS the channel, fast. GPCR: α subunit swaps GDP→GTP, dissociates, opens channel or activates enzyme/2nd messenger; slower, longer, amplified"],
+["Synapse",0,"Spatial vs temporal summation","Spatial: many presynaptic neurons at once. Temporal: one neuron firing rapidly. Summed at axon hillock; EPSPs vs IPSPs decide if threshold is hit"],
+["Synapse",0,"Divergence vs convergence","One presynaptic neuron → many postsynaptic / many presynaptic → one postsynaptic"],
+["Synapse",0,"Postsynaptic vs presynaptic inhibition","Post: glycine (spinal cord)/GABA (brain) → hyperpolarize. Pre: axoaxonic synapse blocks Ca2+ channels, less NT release (opioids reduce substance P)"],
+["ACh",0,"Nicotinic vs muscarinic receptors","Nicotinic: ligand-gated, skeletal muscle end plate, autonomic ganglia; excitatory. Muscarinic: GPCR, smooth/cardiac muscle, glands; excitatory or inhibitory by tissue"],
+["ACh",1,"Why is ACh inhibitory in the heart?","M2 muscarinic receptor → G-protein opens K+ channels → K+ efflux, hyperpolarization → slows SA node (vagus)"],
+["ACh",0,"Myasthenia gravis","Autoimmune antibodies block nicotinic receptors at motor end plate → weakness (eyes, eyelids, face). Treat with AChE inhibitors"],
+["Monoamines",0,"MAO inhibitors vs SSRIs","MAOI: block breakdown of dopamine, serotonin, NE (depression, Parkinson's; tyramine/hypertensive crisis risk). SSRI: block serotonin reuptake only (depression, anxiety)"],
+["Monoamines",0,"Dopamine systems","Nigrostriatal (substantia nigra→striatum, motor; Parkinson's). Mesolimbic (reward, addiction; excess in schizophrenia)"],
+["Monoamines",0,"Serotonin and norepinephrine","Serotonin: raphe nuclei, from tryptophan, mood/appetite. NE: sympathetic neurons + arousal areas in CNS; amphetamines boost NE pathways. Both use metabotropic (G-protein, cAMP) receptors"],
+["Other NTs",0,"Glutamate","Major excitatory NT (80% of cortical synapses). NMDA + AMPA work together in memory (Mg2+ block). Astrocytes take it up"],
+["Other NTs",0,"Glycine vs GABA","Glycine: spinal cord, Cl− in, relaxes antagonist muscles/diaphragm; strychnine blocks it. GABA: brain, Cl− channel, ~1/3 of neurons"],
+["Other NTs",0,"Endocannabinoids","Fatty acids made on demand, no vesicles, retrograde (2-AG) → suppress GABA release (DSI). Same receptors as THC"],
+["Other NTs",0,"NO and CO","Gases, no vesicles, diffuse in, activate cGMP. NO from L-arginine: vasodilation, erection (Viagra blocks cGMP breakdown). CO from heme: olfaction, cerebellum"],
+["Other NTs",0,"Neuropeptides","CCK (satiety), substance P (pain), endogenous opioids (enkephalins, endorphins, dynorphins), neuropeptide Y (hunger; leptin inhibits)"],
+["Other NTs",0,"ATP / adenosine","Purines, P1 = adenosine, P2 = ATP. Adenosine promotes sleep (caffeine blocks it)"],
+["Plasticity",1,"LTP vs LTD and calcium","LTP: rapid large Ca2+ rise → AMPA receptors inserted, spines enlarge. LTD: small prolonged Ca2+ rise → AMPA removed, spines shrink"],
+["Plasticity",1,"Limbic system and LTP","Limbic ability to create/cultivate LTP (or depress it) can strengthen or weaken long-term memories"],
+["Plasticity",0,"Adult neurogenesis sites","Subventricular zone (→ striatum, motor/cognition) and hippocampal subgranular zone (interneurons, memory)"],
+["Cerebrum",0,"Lobes and key functions","Frontal: voluntary motor, executive. Parietal: somatosensory. Temporal: hearing, memory. Occipital: vision. Insula: taste, visceral/pain, autonomic"],
+["Cerebrum",0,"Precentral vs postcentral gyrus","Precentral (frontal) = primary motor cortex, upper motor neurons. Postcentral (parietal) = somatosensory cortex. Separated by central sulcus. Homunculus: hands, lips, face are huge"],
+["Cerebrum",0,"Wernicke's aphasia vs Broca's aphasia","Wernicke (temporal/parietal): can speak fluently but 'word salad', can't comprehend. Broca (frontal): understands but slow, poorly articulated speech. Angular gyrus: reading/writing"],
+["Cerebrum",0,"Lateralization","Each hemisphere controls the opposite body side. Left: language, analytics, calculation. Right: visuospatial, faces, music. Corpus callosum links them"],
+["Extras",0,"EEG waves","Alpha: awake, relaxed, eyes closed. Beta: active mental work. Theta: REM / attention. Delta: slow-wave sleep (abnormal in awake adult)"],
+["Extras",0,"Sleep NTs and stages","Histamine = wakefulness; adenosine + GABA = sleep. Non-REM first (declarative memory), REM later (nondeclarative), ~90-min cycles"],
+["Basal nuclei",1,"Basal nuclei structures","Claustrum, corpus striatum (caudate + lentiform nucleus = putamen + globus pallidus). Act as a filter for motor commands. Substantia nigra will be asked about"],
+["Basal nuclei",1,"Motor circuit, per your notes","Cortex (thought to move, glutamate) → primary motor cortex; basal nuclei refine it: putamen/caudate → globus pallidus → thalamus via GABA (inhibitory) 'brakes'; substantia nigra supplies dopamine; thalamus exits back to cortex with glutamate. Initial signal is jerky, not graded: M1 can't brake itself"],
+["Basal nuclei",0,"Parkinson's vs Huntington's","Parkinson's: substantia nigra dopamine neurons die. Huntington's: GABA neurons degenerate, involuntary movements"],
+["Memory",0,"Memory types","Declarative/explicit: semantic (facts), episodic (events). Nondeclarative/implicit: procedural skills (basal nuclei, cerebellum). Working memory: prefrontal cortex, seconds"],
+["Memory",0,"Memory brain areas","Hippocampus: acquire + consolidate. Amygdala: short→long term. Prefrontal: working memory. Inferior temporal: visual storage. Consolidation needs protein synthesis, new synapses"],
+["Extras",0,"Brain stats","~100 billion neurons; ~1.5 kg (3–3.5 lb); gets 15% of total blood flow. Gray matter = cell bodies + dendrites (cortex, deep nuclei). White matter = myelinated axons (tracts)"],
+["Extras",0,"Cerebrum basics","From telencephalon; ~80% of brain mass; higher mental function. Right + left hemispheres joined by corpus callosum. Cortex = 2–4 mm gray matter; gyri (folds) + sulci (grooves) = convolutions, which add surface area"],
+["Extras",0,"Insula","Not visible on surface. Memory encoding, integrates sensory (esp. pain, taste, smell, hearing) with visceral responses; controls autonomic/cardiovascular responses"],
+["Extras",0,"Mirror neurons","Frontal + parietal lobes; goal-directed actions and copying others; linked via insula/cingulate gyrus to emotion centers; may help social + language learning; implicated in autism"],
+["Extras",0,"Brain imaging: CT, PET, MRI","CT: X-ray absorption by soft tissue. PET: positron-emitting tracer, gamma rays from active tissue (cancer staging, brain metabolism, depression). MRI: protons aligned by magnets, water content differs; clear gray matter / white matter / CSF"],
+["Extras",0,"Brain imaging: fMRI, MEG, EEG","fMRI: BOLD response, glutamate → vasodilation → more oxyhemoglobin in active regions (brain surgery planning). MEG: magnetic fields from postsynaptic currents, SQUID sensors, more accurate than EEG (epilepsy/tumor surgery). EEG: scalp electrodes detect synaptic potentials of cortical cell bodies + dendrites"],
+["Extras",0,"Sleep: REM vs non-REM details","REM: dreams, theta waves, limbic system very active, irregular breathing/heart rate, nondeclarative memory. Non-REM: 4 stages, stages 3–4 = slow-wave (delta), regular breathing, repair of free-radical damage, declarative + spatial memory. Slow-wave early in night, REM later; people wake naturally from REM"],
+["Extras",0,"Sleep and the glymphatic system","Glymphatic system clears waste (abnormal Alzheimer's proteins), mainly active in deep sleep; less effective with age. ~3 hr delay between learning and sleep improves declarative consolidation"],
+["Extras",0,"Neurotrophins","NGF, BDNF, GDNF, NT-3, NT-4/5. Promote fetal neuron growth; in adults maintain sympathetic ganglia + help sensory neuron regeneration"],
+["Glia",0,"Blood-brain barrier: what forms it?","Tight junctions between capillary endothelium + astrocyte end-feet (and pericytes). Blocks paracellular transport; lipid-soluble substances pass, others need transporters. Complicates drug delivery to the CNS"],
+["Glia",0,"Astrocyte–neuron crosstalk","Astrocytes don't fire APs but respond to Ca2+. Active neurons release ATP → Ca2+ wave in astrocytes → gliotransmitters (glutamate, ATP, adenosine, D-serine) or prostaglandin E2 from end-feet → vasodilation, more blood flow"],
+["Neurons",0,"Neuron anatomy: parts and jobs","Dendrites receive input (graded potentials). Cell body: nucleus, metabolic center. Axon hillock + initial segment: where APs are generated. Axon collaterals branch; nodes of Ranvier gaps in myelin; axon terminals release NT"],
+["AP",0,"Unmyelinated vs myelinated conduction","Unmyelinated: AP regenerated at every patch of membrane, slow, same amplitude (no decrement). Myelinated: only at nodes, myelin insulates, improves cable properties"],
+["AP",0,"Excitability and electrochemical gradient","Neurons and muscle cells can change membrane potential by changing ion permeability. Ions follow their electrochemical gradient (concentration + charge). Ion currents occur only where channels are"],
+["Synapse",0,"Synapse classification","Pre → post neuron. Axodendritic (most common), axosomatic, axoaxonic. PNS synapse onto muscle/gland = neuromuscular junction. Electrical (gap junctions) vs chemical"],
+["Synapse",0,"G-protein cycle (Table 7.6)","Unbound: α-GDP with β/γ attached to receptor. Ligand binds → α swaps GDP for GTP and dissociates. α or βγ goes to effector (channel or enzyme). α hydrolyzes GTP→GDP, subunits reassemble. NE: G-protein → adenylate cyclase → cAMP → protein kinase → phosphorylates channels/enzymes/genes"],
+["ACh",0,"Acetylcholinesterase","Breaks down ACh in the cleft. Inhibitors (neostigmine etc.) raise ACh: treat myasthenia gravis + Alzheimer's; nerve gas and organophosphates overstimulate and kill"],
+["ACh",0,"Neuromuscular junction sequence","Somatic motor neuron → ACh binds nicotinic receptors on motor end plate → end plate potential (an EPSP) → opens voltage-gated Na+ → muscle AP → contraction. Autonomic parasympathetic neurons mostly use ACh"],
+["Other NTs",0,"Hydrogen sulfide (H2S)","Made by nervous, cardiovascular, pulmonary systems; relaxes vessels (blood pressure), modulates neurotransmission, reduces lung inflammation"],
+["Plasticity",0,"Dendritic spines and plasticity","Spines enlarge in LTP and shrink in LTD. LTD occurs on less-used pathways (pruning); inappropriate LTD impairs learning"],
+["Cerebrum",0,"Cerebral lateralization and split brain","Corpus callosum is severed in severe epilepsy (split brain). Somatosensory input from each side projects to the opposite postcentral gyrus (decussation)"],
+["Cerebrum",0,"Speech pathway","Hearing/vision → Wernicke's area → arcuate fasciculus → Broca's area → primary motor cortex. Angular gyrus (parietal/occipital/temporal junction) integrates auditory, visual, somatosensory; damage → reading/writing aphasias. TIAs often hit speech areas with full recovery"],
+["Cerebrum",0,"Limbic system structures","Network involved in emotional drives ('smell brain'): cingulate gyrus, septal + preoptic nuclei, olfactory bulb/tract, hypothalamus, mammillary body, amygdaloid body, hippocampus, fornix"],
+["Memory",0,"Long-term memory: what changes?","Gene activation, mRNA, protein synthesis, new synapses; neurons need rapid energy. Hippocampus + orbitofrontal cortex build cognitive maps; sleep moves memories to storage. Limbic system can enhance or inhibit storage"],
+["ACh",0,"Drug origins (Table 7.5)","Botulinum: Clostridium bacteria. Curare: South American tree resin. α-Bungarotoxin: Bungarus snake venom. Saxitoxin: red tide algae. Tetrodotoxin: pufferfish. Nerve gas: artificial. Neostigmine: Nigerian bean. Strychnine: Asian tree seeds"],
+["ACh",0,"Agonist vs antagonist","Agonist stimulates a receptor (nicotine at nicotinic, muscarine at muscarinic). Antagonist inhibits it (curare at nicotinic, atropine at muscarinic)"],
+["ACh",0,"Where is ACh excitatory vs inhibitory?","Excitatory: all somatic motor neurons, some autonomic motor neurons, some CNS. Inhibitory: some autonomic motor neurons (e.g., vagus slowing the heart)"],
+["ACh",0,"Nicotinic receptor behavior","Ligand-gated; opens to Na+ and K+, but more Na+ in than K+ out → EPSP (end plate potential). Binding of ACh opens the channel; closed until neurotransmitter binds"],
+["Glia",0,"Neurilemma and myelin structure","Schwann cell wraps one axon segment in many layers of lipid membrane = myelin. Outer cytoplasm + nucleus = neurilemma, around all PNS axons (needed for regeneration). CNS lacks it"],
+["Glia",0,"Are glial cells excitable?","No, non-conducting support cells. Astrocytes respond to Ca2+ changes, not action potentials"],
+["Neurons",0,"Dendrites: what do they do?","Receive input from other neurons, convert chemical signals to graded electrical ones; involved in learning, memory, regulation"],
+["AP",0,"Cable properties","Charge spreads passively and weakens with distance; bigger axon diameter and myelin reduce loss. This is why graded potentials decay but APs are regenerated"],
+["AP",0,"Voltage-gated Na+ channel states","Closed at rest → open on depolarization → inactivated (refractory) until membrane repolarizes"],
+["Synapse",0,"Graded EPSPs and the hillock","EPSPs weaken as they travel to the axon hillock; they must still be strong enough to reach about −55 mV at the initial segment ★"],
+["Synapse",0,"Monoamine inactivation","Reuptake into the terminal, then MAO breaks monoamines down. SSRIs block reuptake; MAOIs block degradation"],
+["Synapse",0,"NE receptors: metabotropic","NE receptors in CNS are G-protein coupled: G-protein → adenylate cyclase → cAMP → protein kinase → phosphorylates channels, enzymes, genes"],
+["Plasticity",0,"NMDA and AMPA together","Both are glutamate ion channels. NMDA is blocked by Mg2+; once depolarized by AMPA, Mg2+ leaves, Ca2+ enters, triggering LTP"],
+["Other NTs",0,"Huntington's disease","Loss of GABA-secreting neurons → involuntary movements and cognitive decline"],
+["Other NTs",0,"Runner's high","Endogenous opioids (endorphins) → euphoria and reward after exercise"],
+["CSF",0,"CSF reabsorption","Through arachnoid villi/granulations into dural sinuses, then to blood and lymphatics. CSF cushions, removes waste, protects chemical environment"],
+["Extras",0,"CNS regeneration limits","Injury causes collaterals to sprout but central axons regrow poorly. Nogo from oligodendrocytes inhibits regrowth; scarring also blocks"],
+["Basal nuclei",1,"Role of the basal nuclei","Acts as a filter for motor commands. Info flows cortex → basal nuclei → thalamus → cortex; substantia nigra dopamine modulates it"],
+["Cerebrum",0,"What is the homunculus?","Map of body on motor and sensory gyri; fine control or detailed sensation (hands, lips, face) gets disproportionately large cortex. Motor map is precentral; sensory is postcentral"],
+["Memory",0,"Memory table: who stores what?","Episodic: medial temporal, thalamus, fornix, prefrontal. Semantic: inferior temporal. Procedural: basal nuclei, cerebellum, supplementary motor areas. Working: prefrontal (words: Broca, Wernicke; spatial: visual association)"],
+["Neurons",0,"PNS definition","Cranial nerves and spinal nerves (plus ganglia): link the CNS to limbs and organs. Nerve = axons in the PNS; may be mixed"],
+["Monoamines",0,"Which are the monoamines?","Dopamine, norepinephrine, serotonin, histamine (also melatonin). Regulate mood, arousal, etc. Histamine = wakefulness. Drugs/diseases: MAOIs, SSRIs, Parkinson's (dopamine), schizophrenia (excess mesolimbic dopamine), amphetamines, LSD"],
+["Plasticity",0,"CREB and LTP","CREB activation drives gene expression changes that make LTP long-lasting (new proteins, synapses), along with AMPA receptor insertion"],
+["Cerebrum",0,"Limbic system functions","Emotion, memory, motivation. Hippocampus, amygdala, hypothalamus, cingulate gyrus. Can enhance or inhibit long-term memory storage ★"],
+["AP",0,"Threshold + RMP numbers","Resting about −70 mV; threshold about −55 mV; peak about +40 mV"],
+["Basal nuclei",0,"Chorea","Involuntary, jerky movements, as in Huntington's disease; damage to the caudate nucleus (part of the corpus striatum). Kahoot answer: caudate nucleus"],
+["Memory",0,"Alzheimer's disease (Kahoot)","Involves changes in enzyme, protein, and lipid activity in the brain (abnormal proteins build up; sleep/glymphatic clearance helps). Not mediated only by genes or by simple synaptic failure"],
+["Memory",0,"Working memory examples (Kahoot)","Looking up an address and addressing the envelope; keeping a phone number in mind until you dial. NOT recognizing a threatening picture or recalling a past game (episodic) or playing a learned song (procedural)"],
+["Memory",0,"Learning physiology material = which memory?","Semantic (facts). Episodic = events, procedural = skills (implicit), working = seconds to minutes"],
+["Monoamines",0,"Norepinephrine and fight-or-flight (Kahoot)","NE is the sympathetic neurotransmitter (smooth/cardiac muscle, glands) and drives CNS arousal: fight or flight. Amphetamines stimulate NE pathways"],
+["Meninges",0,"Meninges and layers (low priority: you wrote 'not on exam?')","Dura mater, arachnoid mater, pia mater; CSF in subarachnoid space"]
+];
+// drug table: [agent,target,effect,use]
+const D=[["Neostigmine / physostigmine / pyridostigmine","AChE inhibitors","↑ ACh in cleft","Myasthenia gravis, Alzheimer's"],
+["Nerve gas / organophosphates","AChE inhibitors","Overstimulate cholinergic synapses","Lethal"],
+["Curare","Nicotinic ACh antagonist","Blocks neuromuscular transmission, paralysis","Surgical muscle relaxant"],
+["α-Bungarotoxin","Binds nicotinic ACh receptor","Blocks ACh binding","Snake venom"],
+["Botulinum toxin","Presynaptic terminal","Inhibits ACh release","Bacterial toxin"],
+["Atropine","Muscarinic antagonist","Blocks parasympathetic effects, ↑ heart rate","Bradycardia, pupil dilation"],
+["Nicotine / muscarine","Agonists: nicotinic / muscarinic","Stimulate receptor","Muscarine from mushrooms"],
+["Tetrodotoxin / saxitoxin","Voltage-gated Na+ channels","Block action potentials","Pufferfish / red tide"],
+["Strychnine","Glycine receptor antagonist","No IPSPs in spinal cord, convulsions, asphyxiation","Poison"],
+["MAO inhibitors","Monoamine oxidase","↑ dopamine, serotonin, NE","Depression, Parkinson's"],
+["SSRIs (fluoxetine/Prozac, sertraline/Zoloft)","Serotonin reuptake","↑ serotonin in synapse","Depression, anxiety"],
+["Caffeine","Adenosine receptors","Blocks adenosine, wakefulness","Stimulant"],
+["Amphetamines","NE pathways","Stimulate arousal","Stimulant"],
+["Viagra","cGMP breakdown","Prolongs NO effect, vasodilation","Erectile dysfunction"],
+["LSD","Serotonin receptors (agonist)","Hallucinations","—"],
+["Morphine / opium","Opioid receptors","Pain relief, euphoria","Mimic endorphins"],
+["THC","Endocannabinoid receptors","Widespread, impairs learning/memory","Exocannabinoid"]];
+// quiz: [q, [opts], correctIdx, why]
+const Q=[
+["Which pair gives EPSP and IPSP respectively?",["K+ efflux / Na+ influx","Na+ influx / Cl− influx","Cl− influx / Ca2+ influx","Ca2+ influx / Na+ influx"],1,"Na+ and Ca2+ influx depolarize (EPSP); Cl− influx and K+ efflux hyperpolarize (IPSP)."],
+["The diencephalon becomes:",["Cerebral hemispheres + lateral ventricles","Thalamus, hypothalamus, third ventricle","Pons + cerebellum","Medulla + lower 4th ventricle"],1,"Telencephalon is the one with hemispheres and lateral ventricles."],
+["Word salad with fluent speech suggests damage to:",["Broca's area","Primary motor cortex","Wernicke's area","Precentral gyrus"],2,"Wernicke = comprehension. Broca = nonfluent, understands."],
+["A cut PNS axon regenerates best when:",["Nogo is present","Cut ends are near the target and Schwann cells form a tube","Oligodendrocytes are nearby","Myelin is absent"],1,"Nogo and oligodendrocytes are the CNS problem."],
+["Which drug blocks nicotinic receptors?",["Atropine","Curare","Neostigmine","Fluoxetine"],1,"Atropine is muscarinic; neostigmine inhibits AChE."],
+["Parkinson's disease is caused by loss of:",["GABA neurons in cerebellum","Dopamine neurons in substantia nigra","Serotonin neurons in raphe","ACh neurons in the cortex"],1,"Nigrostriatal dopamine pathway."],
+["Why does ACh slow the heart?",["Nicotinic receptor opens Na+","Muscarinic M2 opens K+ channels via G-protein","It's degraded faster","It blocks Ca2+ release"],1,"K+ efflux hyperpolarizes SA node cells."],
+["A rapid large rise in postsynaptic Ca2+ causes:",["LTD","LTP, AMPA receptor insertion","Neurogenesis","Presynaptic inhibition"],1,"Small prolonged Ca2+ = LTD."],
+["Saltatory conduction increases speed because:",["AP regenerates only at nodes of Ranvier","Axon diameter shrinks","K+ leak stops","Na+ pumps speed up"],0,"Current flows through insulated internodes."],
+["Strychnine kills by:",["Blocking ACh release","Blocking glycine receptors","Blocking Na+ channels","Inhibiting MAO"],1,"No IPSPs in spinal cord; muscles + diaphragm stay contracted."],
+["Which is true of EPSPs but not action potentials?",["Refractory period","All-or-none","Graded + summate","+40 mV peak"],2,"EPSPs are graded and can summate."],
+["Order of CSF flow after the 3rd ventricle:",["Aqueduct → 4th ventricle → subarachnoid space","Foramen → lateral ventricle","4th ventricle → aqueduct","Arachnoid villi → choroid plexus"],0,"Lateral → foramina → 3rd → aqueduct → 4th → subarachnoid → villi → blood."],
+["Which cells myelinate axons in the CNS?",["Schwann cells","Oligodendrocytes","Astrocytes","Microglia"],1,"One oligodendrocyte myelinates many axons; Schwann = PNS."],
+["Retrograde axonal transport uses:",["Kinesin toward terminal","Dynein toward cell body","Myosin","Diffusion"],1,"Anterograde = kinesin."],
+["Absolute refractory period is due to:",["K+ leak","Inactivated voltage-gated Na+ channels","Ca2+ influx","Open Cl- channels"],1,"Prevents backward travel and caps frequency."],
+["How does the brain distinguish strong from weak stimuli?",["Larger AP amplitude","Higher AP frequency and more neurons","Faster Na+ pump","Longer myelin"],1,"All-or-none: amplitude is fixed."],
+["Botulinum toxin acts by:",["Blocking AChE","Blocking nicotinic receptors","Inhibiting ACh release","Blocking Na+ channels"],2,"Presynaptic. Curare blocks receptors."],
+["MAO inhibitors raise levels of:",["ACh","Dopamine, serotonin, NE","GABA only","Glutamate"],1,"SSRIs affect serotonin only."],
+["2-AG is a retrograde messenger that:",["Raises GABA release","Suppresses presynaptic GABA release (DSI)","Opens Cl- channels","Is stored in vesicles"],1,"Made on demand, no vesicles."],
+["Viagra works by:",["Releasing NO","Blocking cGMP breakdown","Blocking ACh","Activating opioid receptors"],1,"Prolongs NO’s cGMP effect."],
+["Presynaptic inhibition occurs at:",["Axodendritic synapse","Axoaxonic synapse","Gap junction","Neuromuscular junction"],1,"Closes Ca2+ channels, less NT release."],
+["Which lobe handles hearing and memory of sounds?",["Frontal","Parietal","Temporal","Occipital"],2,"Occipital = vision."],
+["Delta waves in an awake adult suggest:",["Relaxation","Brain damage","Concentration","REM"],1,"Normal only in slow-wave sleep."],
+["The amygdaloid body is most associated with:",["Converting short-term to long-term memory","Speech production","Vision","CSF production"],0,"Hippocampus acquires and consolidates too."]];
+const $=s=>document.getElementById(s);const sg=c=>!["Embryo","Meninges","Extras"].includes(c[0]);
+let S={};try{S=JSON.parse(localStorage.getItem('ns')||'{}')}catch(e){}
+const save=()=>{try{localStorage.setItem('ns',JSON.stringify(S))}catch(e){}};
+S.k=S.k||{};
+let tab='fc',filt='★',idx=0,flip=false,deck=[],qi=0,qs=0,qd=false,hide=true,order=[];
+const tabs={kh:'Kahoots',nt:'Notes',bl:'Blurt',sq:'Order It',fc:'Flashcards',qz:'Quiz',dr:'Drugs',dp:'SG Questions'};
+function nav(){$('nav').innerHTML=Object.entries(tabs).map(([k,n])=>`<button class="${k==tab?'on':''}" onclick="$('q').value='';tab='${k}';render()">${n}</button>`).join('')}
+function mk(){deck=C.map((c,i)=>i).filter(i=>filt=='All'||(filt=='★'?C[i][1]:filt=='SG'?sg(C[i]):filt=='Missed'?S.k[i]===0:C[i][0]==filt));if(idx>=deck.length)idx=0}
+function render(){nav();({fc,qz,dr,dp,nt,sq,kh,se,bl})[tab]()}
+function fc(){mk();const tp=['★','SG','All','Missed',...new Set(C.map(c=>c[0]))];
+let h=`<div class="row">${tp.map(t=>`<button class="${t==filt?'on':''}" onclick="filt='${t}';idx=0;flip=false;render()">${t}</button>`).join('')}</div>`;
+if(!deck.length)h+='<div class="card">Nothing here yet. Mark cards "Missed" while studying.</div>';
+else{const i=deck[idx],c=C[i],kn=Object.values(S.k).filter(x=>x==1).length;
+h+=`<div class="small">${idx+1} / ${deck.length} · ${kn}/${C.length} marked known</div><div class="card fc" onclick="flip=!flip;render()"><div class="tag">${c[1]?'<span class="star">★ </span>':''}${sg(c)?'<span class="star" style="color:var(--ok)">SG </span>':''}${c[0]} · ${flip?'answer':'tap to reveal'}</div>${flip?c[3]:c[2]}</div>
+<div class="row"><button onclick="go(-1)">←</button><button class="no" onclick="mark(0)">Missed</button><button class="ok" onclick="mark(1)">Got it</button><button onclick="go(1)">→</button><button onclick="shuf()">Random</button></div>`}
+$('v').innerHTML=h}
+function go(d){idx=(idx+d+deck.length)%deck.length;flip=false;render()}
+function mark(v){S.k[deck[idx]]=v;save();if(filt=='Missed'&&v){mk();if(idx>=deck.length)idx=0;flip=false;render()}else go(1)}
+function shuf(){mk();idx=Math.floor(Math.random()*deck.length);flip=false;render()}
+function qz(){if(qi>=Q.length){$('v').innerHTML=`<div class="card"><h2>${qs} / ${Q.length}</h2><button onclick="qi=0;qs=0;qd=false;render()">Retry</button></div>`;return}
+const q=Q[qi];$('v').innerHTML=`<div class="small">Question ${qi+1} of ${Q.length}</div><div class="card"><b>${q[0]}</b>${q[1].map((o,j)=>`<button class="opt" id="o${j}" onclick="pick(${j})">${o}</button>`).join('')}<div id="ex" class="small"></div></div>`;qd=false}
+function pick(j){if(qd)return;qd=true;const q=Q[qi];if(j==q[2])qs++;$('o'+q[2]).classList.add('right');if(j!=q[2])$('o'+j).classList.add('wrong');$('ex').innerHTML=q[3]+'<div class="row"><button onclick="qi++;render()">Next</button></div>'}
+function dr(){$('v').innerHTML=`<div class="row"><button onclick="hide=!hide;render()">${hide?'Show':'Hide'} effect + use columns</button></div><div class="card"><table><tr><th>Agent</th><th>Target</th><th>Effect</th><th>Use</th></tr>${D.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td class="${hide?'h':''}" onclick="this.classList.toggle('h')">${r[2]}</td><td class="${hide?'h':''}" onclick="this.classList.toggle('h')">${r[3]}</td></tr>`).join('')}</table></div><p class="small">Tap a gray cell to reveal. Your study guide says to also recall any drugs/diseases he mentioned in class.</p>`}
+const P=[["SG 1. Roles of the neuron types","Sensory (afferent): carry input from receptors into the CNS. Motor (efferent): carry commands from the CNS to muscles and glands. Association neurons (interneurons): entirely inside the CNS, integrate information and decide the response (homeostasis)."],
+["SG 2. Saltatory conduction: process + importance","Myelin insulates the axon; voltage-gated Na+ channels are concentrated at nodes of Ranvier (every 1–2 mm). The AP is regenerated only at nodes while current flows passively through the axon between them, so it appears to jump. Result: much faster (~100 m/s vs ~1 m/s) and less energy spent restoring ion gradients."],
+["SG 3. Nicotinic vs muscarinic ACh receptors","Nicotinic: ligand-gated channel (receptor is the channel), fast, always excitatory; skeletal muscle end plate, autonomic ganglia; nicotine agonist, curare antagonist. Muscarinic: G-protein coupled, slower; smooth + cardiac muscle, glands, CNS; excitatory or inhibitory by tissue (heart: K+ efflux slows rate); muscarine agonist, atropine antagonist."],
+["SG 4. How is neurotransmitter released?","AP reaches terminal → voltage-gated Ca2+ channels open → Ca2+ enters → synaptic vesicles fuse with membrane (exocytosis) → NT crosses cleft → binds postsynaptic receptors → EPSP or IPSP → NT removed by enzyme (AChE), reuptake, or glia."],
+["SG 5. LTP: molecular changes + link to memory","Strong glutamate input depolarizes via AMPA receptors, Mg2+ leaves NMDA channels, rapid Ca2+ entry activates kinases, more AMPA receptors are inserted, spines enlarge, and gene expression (CREB) makes new proteins and synapses. Stronger synapse = stored memory (hippocampus)."],
+["SG 6. Motor control structures + Parkinson's","Primary motor cortex (precentral gyrus), basal nuclei (caudate, putamen, globus pallidus, substantia nigra), thalamus, cerebellum (coordination). Parkinson's: dopamine neurons of the substantia nigra degenerate, so the striatum loses dopamine input → impaired, poorly regulated movement."],
+["SG 7. CSF circulation + functions","Choroid plexus → lateral ventricles → interventricular foramina → 3rd ventricle → cerebral aqueduct → 4th ventricle → central canal or subarachnoid space → arachnoid villi/granulations → dural sinuses → blood. Functions: cushions, removes waste, regulates chemical environment, protects/nourishes CNS."],
+["SG 8. MAO inhibitors vs SSRIs","MAOIs block the enzyme that degrades dopamine, serotonin, NE (and melatonin): depression, panic, anxiety, Parkinson's; risk of hypertensive crisis with certain foods/drugs. SSRIs block only serotonin reuptake transporters: depression, anxiety; fewer interactions."],
+["SG 9. EPSP vs IPSP","EPSP: depolarizing, Na+ (and Ca2+) influx, moves toward threshold. IPSP: hyperpolarizing, Cl- influx or K+ efflux, moves away from threshold. Both are graded, local, summate, decay with distance, and have no refractory period."],
+["All-or-none law: how does the brain tell light touch from intense pain?","Voltage never changes. Intensity is coded by frequency of APs and by how many neurons fire (recruitment)."],
+["Why use slow G-protein pathways for mood and heart rate?","Amplification via second messengers and longer-lasting, modulatory effects; fast ligand-gated channels suit precise, brief signals like muscle contraction."],
+["What if there were no absolute refractory period?","APs could travel backward and fuse, so direction is lost and firing frequency is uncapped."],
+["How does one neuron make decisions from thousands of inputs?","Spatial + temporal summation of EPSPs and IPSPs at the axon hillock; fires only if net depolarization reaches ≈ −55 mV."],
+["Same ACh, opposite effects in muscle and heart?","The receptor and its coupling differ: nicotinic ligand-gated Na+ (excitatory) vs muscarinic G-protein opening K+ (inhibitory)."],
+["Working memory vs consolidated long-term memory?","Working memory is transient electrical activity (prefrontal cortex). Consolidation needs gene activation, proteins, new/stronger synapses (LTP, hippocampus)."],
+["If axonal transport fails, what breaks? Tetanus link?","Anterograde: NT vesicles/organelles don't reach terminals. Retrograde: signals/waste don't return. Tetanus toxin travels up axons by retrograde transport to reach the spinal cord, where it blocks inhibitory release → spastic paralysis."],
+["Word salad vs Broca's aphasia","Word salad = fluent but meaningless (Wernicke, comprehension lost). Broca's = comprehension intact, speech effortful and slurred."]];
+function dp(){$('v').innerHTML=P.map(p=>`<details class="card"><summary>${p[0]}</summary><p>${p[1]}</p></details>`).join('')}
+const T=(h,r)=>`<table><tr>${h.map(x=>`<th>${x}</th>`).join('')}</tr>${r.map(x=>`<tr>${x.map(y=>`<td>${y}</td>`).join('')}</tr>`).join('')}</table>`;
+const F=s=>`<div class="flow">${s.map(x=>`<span>${x}</span>`).join('<i>→</i>')}</div>`;
+const L=a=>`<ul>${a.map(x=>`<li>${x}</li>`).join('')}</ul>`;
+const N=[
+['CH 7 · Terminology + neuron types',T(['Term','Meaning'],[['CNS / PNS','Brain + cord / nerves, ganglia, plexuses'],['Sensory (afferent)','Receptor → CNS'],['Motor (efferent)','CNS → effector'],['Interneuron','Multipolar, entirely in CNS'],['Nerve','Axons in PNS (mixed = sensory + motor)'],['Somatic motor nerve','Skeletal muscle'],['Autonomic motor nerve','Smooth/cardiac muscle, glands'],['Ganglion / nucleus / tract','Cell bodies PNS / cell bodies CNS / axons CNS']])+T(['Structural type','Where'],[['Pseudounipolar','Sensory; T-shaped, dendritic branch + axon, cell body off to side'],['Bipolar','Retina, olfactory, special senses'],['Multipolar','Motor neurons + interneurons']])],
+['CH 7 · Neuroglia (Table 7.2)',T(['Cell','Where','Job'],[['Schwann','PNS','Myelin; 1 cell = 1 axon segment; neurilemma around all PNS axons'],['Satellite','PNS','Support ganglion cell bodies'],['Oligodendrocyte','CNS','Myelin for many axons = white matter'],['Microglia','CNS','Phagocytes'],['Astrocyte','CNS','BBB, K+/glutamate uptake, lactate to neurons, synapse formation, neurogenesis, GDNF, gliotransmitters'],['Ependymal','CNS','Line ventricles + central canal; choroid plexus makes CSF']])+'<h3>PNS regeneration ★ (1 question)</h3>'+F(['Injury','Distal axon degenerates + phagocytosed','Schwann cells form regeneration tube','Axon regrows','Reconnects if near target'])+L(['CNS: collaterals sprout but little regrowth; Nogo (oligodendrocytes) inhibits','Scarring also limits CNS repair','Neurotrophins (NGF, BDNF, GDNF, NT-3, NT-4/5): fetal growth; adult maintenance + sensory regeneration','Guillain-Barré (PNS) + MS (CNS): autoimmune demyelination'])],
+['CH 7 · Action potential + conduction',F(['Rest −70 mV','Stimulus → threshold −55 mV','Voltage-gated Na+ open (positive feedback)','Peak +40 mV','Na+ inactivate, K+ open','Repolarize','Hyperpolarize, back to rest'])+L(['Rest set by: Na+/K+ pump, K+ leak channels, trapped anions. K+ high inside, Na+ high outside','K+: leak (always open) + voltage-gated. Na+: voltage-gated only','All-or-none; intensity = frequency + recruitment','Absolute refractory = no AP; relative = needs stronger stimulus; one-way travel','Generated at axon hillock/initial segment'])+T(['','Unmyelinated','Myelinated'],[['Mechanism','AP regenerated at every patch','Saltatory: jumps node to node (1–2 mm)'],['Speed','~1 m/s (thin)','~100 m/s (thick)'],['Speed rises with','Larger diameter (less resistance, better cable properties)','Myelination']])],
+['CH 7 · Synapse + potentials',F(['AP reaches terminal','Voltage-gated Ca2+ open','Vesicles release NT','NT binds receptor','EPSP or IPSP','NT removed (enzyme, reuptake, glia)'])+T(['','Action potential','EPSP'],[['Amplitude','All-or-none','Graded'],['Opens','Voltage Na+ channels','Ligand channels (Na+ + K+)'],['Distance','Regenerated along axon','1–2 mm local, decremental'],['Summation','No','Yes'],['Refractory','Yes','No'],['Peak','+40 mV','Near zero'],['Blocked by','Tetrodotoxin','Curare']])+T(['Ion movement','Result'],[['Na+ influx','EPSP ★'],['Ca2+ influx','EPSP ★'],['K+ efflux','IPSP ★'],['Cl- influx','IPSP ★']])+L(['Electrical synapse = gap junctions (connexins), two-way','Chemical synapse: one-way, vesicles','Spatial summation (many neurons) vs temporal (one fast neuron), summed at hillock','Divergence = 1→many, convergence = many→1','Presynaptic inhibition: axoaxonic, closes Ca2+ channels'])],
+['CH 7 · Receptors + G-proteins',T(['','Ligand-gated','G-protein coupled'],[['Speed','Fast','Slow, longer'],['Structure','Receptor is the channel','Receptor → G-protein → channel/enzyme'],['ACh example','Nicotinic: skeletal muscle end plate, autonomic ganglia, some brain; agonist nicotine; antagonist curare','Muscarinic: smooth/cardiac muscle, glands, CNS; agonist muscarine; antagonist atropine'],['Effect','Excitatory','Excitatory or inhibitory (heart: K+ efflux, slows rate)']])+F(['Ligand binds','α swaps GDP→GTP','α dissociates from βγ','Binds channel or enzyme','α hydrolyzes GTP, reassembles'])+F(['NE binds','G-protein','Adenylate cyclase','cAMP','Protein kinase','Phosphorylation: channels, enzymes, genes'])],
+['CH 7 · Neurotransmitters at a glance',T(['NT','Notes'],[['ACh','Somatic motor (all excitatory), parasympathetic, some CNS. AChE inhibitors treat MG + Alzheimer\'s; myasthenia gravis = antibodies vs nicotinic receptors'],['Dopamine','Nigrostriatal (Parkinson\'s, substantia nigra) + mesolimbic (reward, addiction, schizophrenia)'],['Serotonin','Raphe nuclei, from tryptophan; mood, appetite; SSRIs, LSD'],['Norepinephrine','Sympathetic PNS + CNS arousal; amphetamines'],['Glutamate','Main excitatory; NMDA, AMPA, kainate; 80% cortical synapses; most brain energy'],['GABA','Main inhibitory brain, Cl- channel'],['Glycine','Spinal cord IPSPs; strychnine'],['Neuropeptides','CCK, substance P, opioids, NPY (leptin inhibits)'],['Endocannabinoids','No vesicles, retrograde 2-AG, DSI, THC receptors'],['Gases','NO (L-arginine, cGMP, vasodilation), CO (heme), H2S'],['Purines','ATP/adenosine cotransmitters; P1 adenosine, P2 ATP']])+'<p class="small">MAOIs block monoamine breakdown (hypertensive crisis risk); SSRIs block serotonin reuptake.</p>'],
+['CH 7 · Plasticity',T(['','LTP','LTD'],[['Ca2+','Rapid large rise','Small prolonged rise'],['AMPA receptors','Inserted','Removed'],['Spines','Enlarge','Shrink'],['Effect','Stronger synapse, learning','Weaker synapse, pruning']])+L(['NMDA + AMPA work together; NMDA blocked by Mg2+ until depolarization','Hippocampus central; CREB/gene expression for long-lasting LTP'])],
+['CH 8 · Embryology + CSF',F(['Ectoderm groove (day 20)','Neural tube = CNS','Neural crest = PNS ganglia'])+T(['Wk 4','Wk 5','Walls','Cavity'],[['Prosencephalon','Telencephalon ★','Cerebral hemispheres','Lateral ventricles'],['','Diencephalon ★','Thalamus, hypothalamus','Third ventricle'],['Mesencephalon','Mesencephalon','Midbrain','Cerebral aqueduct'],['Rhombencephalon','Metencephalon','Pons, cerebellum','Upper 4th ventricle'],['','Myelencephalon','Medulla','Lower 4th ventricle']])+'<h3>CSF path</h3>'+F(['Choroid plexus','Lateral ventricles','Interventricular foramina','3rd ventricle','Cerebral aqueduct','4th ventricle','Central canal / subarachnoid space','Arachnoid villi','Dural sinus → blood'])],
+['CH 8 · Lobes + cortex (Table 8.1)',T(['Lobe','Functions'],[['Frontal','Voluntary motor (precentral gyrus), personality, planning, speech (Broca)'],['Parietal','Somatosensory (postcentral gyrus), textures/shapes, language understanding'],['Temporal','Hearing, auditory + visual memory'],['Occipital','Vision, eye movement'],['Insula','Memory, pain/visceral integration']])+L(['Central sulcus separates frontal/parietal','Homunculus: hands, lips, face over-represented','Lateralization: left = language, analysis, math; right = visuospatial, faces, music','Wernicke → arcuate fasciculus → Broca; angular gyrus = reading/writing'])],
+['CH 8 · Imaging, EEG, sleep',T(['Tool','Detects'],[['CT','X-ray absorption'],['PET','Gamma rays from positron tracer; metabolism'],['MRI','Proton alignment; gray/white/CSF'],['fMRI','BOLD blood-flow'],['MEG','Magnetic fields, SQUIDs'],['EEG','Scalp electrical activity']])+T(['Wave','State'],[['Alpha','Awake, relaxed, eyes closed (parietal/occipital)'],['Beta','Active (frontal)'],['Theta','REM, attention/memory'],['Delta','Slow-wave sleep; abnormal if awake']])+F(['Non-REM stages 1–4','Back up to REM','~90 min cycle × 5/night'])],
+['CH 8 · Basal nuclei + limbic + memory',F(['Cortex: thought to move','Primary motor cortex (glutamate)','Putamen/caudate','Globus pallidus (GABA)','Thalamus (GABA)','Back to cortex (glutamate)'])+L(['Basal nuclei: claustrum, corpus striatum = caudate + lentiform (putamen + globus pallidus) ★','Substantia nigra supplies dopamine ★','Initial motor signal is jerky; basal nuclei apply the brakes ★','Limbic: cingulate, septal, preoptic, hippocampus, amygdala, fornix, mammillary body, hypothalamus'])+T(['Memory','Regions','Duration'],[['Episodic','Medial temporal, thalamus, fornix, prefrontal','Min–years'],['Semantic','Inferior temporal','Min–years'],['Procedural','Basal nuclei, cerebellum, supplementary motor','Min–years'],['Working','Prefrontal, Broca, Wernicke, visual association','Sec–min']])],
+['CH 7 · Neuron structure + transport',T(['Part','Job'],[['Dendrites','Receive input from other neurons; graded potentials; chemical stimuli → electrical (learning, memory, top-down regulation)'],['Cell body','Nucleus, metabolic center; cluster in CNS = nucleus, in PNS = ganglion'],['Axon hillock + initial segment','Where APs are generated'],['Axon','Conducts AP, 1 mm to 1 m long; collaterals branch; may be myelinated'],['Nodes of Ranvier','Gaps in myelin; voltage-gated Na+ concentrated here'],['Axon terminal (bouton)','Releases NT onto the next cell']])+T(['Transport','Motor','Direction','Carries'],[['Anterograde','Kinesin','Cell body → terminal','Vesicles, organelles, proteins'],['Retrograde','Dynein','Terminal → cell body','Signals, recycled material; tetanus toxin + rabies hijack it']])],
+['CH 7 · Myelin, neurilemma, gray vs white',L(['Schwann cell wraps one axon segment in many membrane layers = myelin sheath (lipid, insulates)','Neurilemma = outer Schwann cytoplasm + nucleus; surrounds ALL PNS axons (even unmyelinated); needed for regeneration','Oligodendrocyte: one cell, many axons, processes wrap several; CNS has no neurilemma','White matter = myelinated axons; gray matter = cell bodies, dendrites, unmyelinated axons','Myelin gaps = nodes of Ranvier','Demyelination: Guillain-Barré (T cells vs PNS myelin, rapid weakness); MS (T lymphocytes + macrophages enter brain, attack CNS myelin)'])],
+['CH 7 · Astrocytes + blood-brain barrier',F(['Blood glucose','Astrocyte end-feet','Lactate','Neuron makes ATP'])+F(['Neuron releases glutamate','Astrocyte uptake','Glutamine','Inhibitory neurons make GABA'])+L(['Take up K+ to keep neuron environment stable','Store glycogen, release lactate','Needed to form CNS synapses; regulate adult neurogenesis (hippocampus, subventricular zone)','Make GDNF (spinal neurons + dopamine neurons survive)','Neuron–astrocyte signalling helps cerebellar motor coordination','Ca2+ waves from neuronal ATP; gliotransmitters (glutamate, ATP, adenosine, D-serine); PGE2 → vasodilation','BBB = endothelial tight junctions + astrocyte end-feet + pericytes; lipid-soluble substances cross, others use transporters; makes CNS drug delivery hard'])],
+['CH 7 · Channels, cable properties, intensity',L(['Voltage-gated channel states: closed (rest), open (depolarization), inactivated (refractory period)','Ion currents only where channels are; depolarization spreads along membrane','Cable properties: current decays with distance; larger diameter + myelin reduce loss','Action potentials are not decremental; EPSPs are','Intensity coding: stronger stimulus = higher AP frequency and more neurons recruited (voltage same)'])],
+['CH 7 · Neuromuscular junction + where drugs act',F(['Motor neuron AP','Ca2+ in','ACh released','Nicotinic receptor on end plate','End plate potential','Voltage Na+ open','Muscle AP','Contraction'])+T(['Drug','Site','Result'],[['Botulinum toxin','Presynaptic release','No ACh → paralysis'],['Curare / α-bungarotoxin','Nicotinic receptor','Blocks ACh'],['Neostigmine, nerve gas','AChE','ACh builds up'],['Tetrodotoxin, saxitoxin','Voltage Na+ channels','No AP'],['Strychnine','Glycine receptor','No IPSPs, spasms']])+'<p class="small">Myasthenia gravis: antibodies block nicotinic receptors, weak eyes/eyelids/face; AChE inhibitors help. Autonomic: parasympathetic neurons use ACh; vagus slows heart (muscarinic).</p>'],
+['CH 7 · Monoamines in depth',F(['Release','Bind receptor (G-protein/metabotropic)','Reuptake into terminal','MAO degrades'])+T(['Drug','Blocks','Raises'],[['SSRIs','Serotonin reuptake','Serotonin'],['MAOIs','Monoamine oxidase','Dopamine, serotonin, NE, melatonin']])+L(['MAOIs: depression, panic, anxiety, Parkinson\'s; food/drug interactions can cause hypertensive crisis','Dopamine cell bodies concentrated in midbrain: nigrostriatal (motor) vs mesolimbic (reward; addictions; excess in schizophrenia)','Serotonin: raphe nuclei, L-tryptophan, mood, behavior, appetite, cerebral circulation; Prozac, Paxil, Zoloft, Lexapro, Luvox','NE: smooth/cardiac muscle + glands (sympathetic), CNS arousal; amphetamines'])],
+['CH 7 · Amino acids + peptides',L(['Glutamate: EPSPs at 80% of cortical synapses; energy for EPSPs = biggest brain energy use; astrocytes clear it and boost glucose uptake/blood flow','Glutamate receptors (all are ion channels): NMDA, AMPA, kainate; NMDA + AMPA cooperate for memory (Mg2+ unblocks)','Glycine opens Cl- channels (IPSP); spinal cord, biceps relax while triceps contract; diaphragm relaxation; strychnine → asphyxiation','GABA: ~1/3 of brain neurons; Cl- channel; loss of cerebellar/striatal GABA neurons → Huntington\'s','CCK = satiety; substance P = pain','Endogenous opioids: enkephalins, endorphins, dynorphins; pain relief, euphoria, runner\'s high','NPY: most abundant peptide, stress/circadian/CV; inhibits glutamate in hippocampus (prevents convulsions); stimulates hunger; leptin blocks'])],
+['CH 7 · Endocannabinoids + gases',F(['Postsynaptic neuron makes 2-AG','Diffuses backward','Binds presynaptic CB receptor','Less GABA released (DSI)','EPSPs win, learning/memory'])+L(['Fatty acids released through membrane, no vesicles; most widespread GPCR in brain (GABA, glutamate, ACh)','Astrocytes have 2-AG receptors and release glutamate','THC (exocannabinoid): widespread, uncontrolled, impairs memory','Also regulate appetite and pain, mood'])+F(['L-arginine','NO diffuses in','cGMP','Smooth muscle relaxes (vasodilation, erection, gut, airways)'])+'<p class="small">Viagra blocks cGMP breakdown. NO also kills bacteria and may be retrograde. CO (heme→biliverdin) also uses cGMP: olfactory epithelium, cerebellum. H2S: BP, lung inflammation.</p>'],
+['CH 7 · Integration + inhibition',T(['','Postsynaptic inhibition','Presynaptic inhibition'],[['Where','Postsynaptic membrane','Axoaxonic synapse on terminal'],['NT','Glycine (cord), GABA (brain)','GABA/opioid-related'],['Effect','Cl- in / K+ out, hyperpolarize','Closes Ca2+ channels, less NT release'],['Example','Antagonist muscles relax','Opioids block substance P (pain)']])+L(['Synaptic plasticity depends on use; hippocampus key','LTD prunes unused pathways; inappropriate LTD hurts learning','Spatial + temporal summation sums EPSPs and IPSPs at the hillock; net depolarization ≥ −55 mV fires','Neural pathways: divergence amplifies, convergence integrates (up to ~1000 inputs)'])],
+['CH 8 · CNS overview + meninges',L(['CNS = brain + cord: processes input and coordinates output; association neurons integrate and keep homeostasis','Learning + memory mainly in cerebrum','Meninges: dura mater (outer, tough, venous sinus), arachnoid mater, pia mater (on brain); CSF in subarachnoid space (low priority)','Choroid plexus: ependymal cells + capillaries in ventricle roofs; secretes CSF; part of BBB','Adult neurogenesis: subventricular zone → striatum; hippocampal subgranular zone → interneurons'])],
+['CH 8 · Cortex, language, lateralization',T(['Area','Location','Function'],[['Primary motor cortex','Precentral gyrus (frontal)','Voluntary muscles, upper motor neurons'],['Somatosensory cortex','Postcentral gyrus (parietal)','Touch, pressure, proprioception'],['Broca\'s area ★','Frontal','Speech production; damage = nonfluent aphasia, comprehension intact'],['Wernicke\'s area ★','Temporal/parietal','Language comprehension; damage = word salad'],['Auditory cortex','Temporal','Sound'],['Visual cortex','Occipital','Vision, visual recognition'],['Angular gyrus','Parietal/occipital/temporal junction','Integrates senses; reading/writing']])+T(['','Left hemisphere','Right hemisphere'],[['Strengths','Language, analysis, speech, writing, calculation, understanding music','Visuospatial, faces, composing music, maps, patterns, part-whole']])+'<p class="small">Contralateral control; corpus callosum links sides. Mirror neurons: frontal/parietal, social learning, autism link.</p>'],
+['CH 8 · Sleep + memory detail',T(['','REM','Non-REM'],[['EEG','Theta','Delta in stages 3–4'],['Body','Irregular breathing + HR','Regular'],['Brain','Limbic very active','Neuron firing and metabolism drop'],['Memory','Nondeclarative','Declarative + spatial'],['Timing','Second half of night','First half']])+L(['Histamine = wake; adenosine + GABA = sleep','Glymphatic clearance in deep sleep','Memory consolidation needs protein synthesis, new synapses and energy','Declarative: semantic (facts) + episodic (events); nondeclarative: procedural, conditioning','Amygdala: short→long term; hippocampus acquires + consolidates; left inferior frontal: math; prefrontal: working memory; limbic can enhance/inhibit storage ★'])],
+['Mnemonics + quick tricks',L(['<b>EPSP</b> = positives enter (Na+, Ca2+). <b>IPSP</b> = K+ leaves or Cl- enters','<b>Afferent</b> = Arrive at CNS; <b>Efferent</b> = Exit CNS','<b>Kinesin</b> goes forward (anterograde); <b>dynein</b> comes back (retrograde)','<b>Schwann = Single</b> axon, PNS; oligodendrocyte = many axons, CNS','Ganglion = <b>P</b>NS cell bodies; Nucleus = CNS cell bodies','<b>Tel</b>encephalon = top (hemispheres); <b>Di</b>encephalon = deep (thalamus, hypothalamus)','<b>Broca</b> = Broken speech, understands; <b>Wernicke</b> = Words make no sense, fluent','<b>Nicotinic</b> = Nerve to muscle (curare blocks); <b>Muscarinic</b> = M2 slows heart (atropine blocks)','Precentral = Primary motor (Pre = Push); Postcentral = Perceive touch','EEG: Alpha = Awake relaxed, Beta = Busy, Theta = REM, Delta = Deep sleep','Strychnine blocks glycine: no relaxation, diaphragm stuck','LTP = Lots of Ca2+ fast; LTD = Low slow Ca2+','SSRI = Serotonin reuptake only; MAOI = all monoamines'])],
+['✅ Study guide checklist',T(['Study guide topic','Where to review'],[['1. CNS / PNS / neuron types / neuroglia (astrocytes, oligodendrocytes, microglia, ependymal)','Notes: Terminology, Neuroglia; SG cards; SG Q1'],['2. Neuron anatomy, axonal transport, RMP, AP, threshold, all-or-none, saltatory','Notes: Neuron structure, Action potential; Order It: AP; SG Q2'],['3. Chemical synapse, EPSP/IPSP, ligand-gated vs GPCR, ACh, monoamines, glutamate, GABA/glycine, NO','Notes: Synapse, Receptors, NT table; SG Q3, Q4, Q9'],['4. LTP, LTD, Ca2+, CREB, memory types, neurogenesis','Notes: Plasticity, Sleep + memory; SG Q5'],['5. Cerebrum lobes, basal nuclei (Parkinson\'s, Huntington\'s), limbic system','Notes: Lobes, Basal nuclei + limbic; SG Q6'],['6. Drugs table (AChE inhibitors, curare, atropine, MAOIs, SSRIs, caffeine + class examples)','Drugs tab (hide-and-reveal); SG Q8'],['7. Reinforcement + deeper questions','SG Questions tab (all 9 + 8 deeper), plus CSF: SG Q7']])+'<p class="small">Study guide hint: recall the drugs and diseases your instructor mentioned in class: strychnine, botulinum, tetrodotoxin, Viagra, LSD, amphetamines, morphine and THC are all in the Drugs tab.</p>']
+];
+const SQ=[['CSF path',['Choroid plexus secretes CSF','Lateral ventricles','Interventricular foramina','Third ventricle','Cerebral aqueduct','Fourth ventricle','Central canal or subarachnoid space','Arachnoid villi','Dural sinus, then blood']],['Action potential',['Resting −70 mV','Stimulus reaches threshold','Voltage-gated Na+ channels open','Depolarization to +40 mV','Na+ inactivate, K+ channels open','Repolarization','Hyperpolarization, then rest']],['Chemical synapse',['AP reaches terminal','Voltage-gated Ca2+ channels open','Vesicles fuse and release NT','NT binds postsynaptic receptor','EPSP or IPSP forms','NT removed from cleft']],['NMJ',['Motor neuron AP','ACh released','ACh binds nicotinic receptor','End plate potential','Voltage-gated Na+ open','Muscle AP','Contraction']],['PNS regeneration',['Axon injured','Distal portion degenerates','Phagocytosis of debris','Schwann cells form regeneration tube','Proximal axon grows through tube','Connection re-established']],['G-protein',['Ligand binds receptor','Alpha swaps GDP for GTP','Alpha dissociates from beta-gamma','Subunit binds effector','Alpha hydrolyzes GTP to GDP','Subunits reassemble']],['Motor circuit',['Thought to move (frontal/limbic)','Primary motor cortex signal','Basal nuclei filter (putamen, caudate)','Globus pallidus (GABA)','Thalamus','Signal back to motor cortex, then skeletal muscle']]];
+let si=0,sp=[],sh=[],sm='';
+function sk(i){if(i==sp.length){sp.push(i);sm=''}else sm='Not yet, try another.';render()}
+function rs(){sp=[];sh=[];sm='';render()}
+function sq(){const s=SQ[si];if(!sh.length)sh=s[1].map((_,i)=>i).sort(()=>Math.random()-.5);const left=sh.filter(i=>!sp.includes(i));
+$('v').innerHTML=`<div class="row">${SQ.map((x,i)=>`<button class="${i==si?'on':''}" onclick="si=${i};rs()">${x[0]}</button>`).join('')}</div><div class="card"><div class="small">Tap the steps in the correct order. ${sm}</div>${sp.map(i=>`<div class="opt" style="padding:6px 10px;border:1px solid var(--ok);border-radius:10px;margin:6px 0">${i+1}. ${s[1][i]}</div>`).join('')}${left.map(i=>`<button class="opt" onclick="sk(${i})">${s[1][i]}</button>`).join('')}${left.length?'':'<b>Done!</b> <button onclick="rs()">Again</button>'}</div>`}
+const K=[['Kahoot 1',[
+['What are the two main divisions of the nervous system?',['Sensory and Motor','Brain and Spinal','Central and Peripheral','Autonomic and Somatic'],[2]],
+['Primary effect of EPSPs?',['Less likely to fire an AP','More likely to fire an AP','Inhibit NT release','Cause hyperpolarization'],[1]],
+['Role of acetylcholinesterase?',['Enhance NT release','Break down ACh after its action','Stimulate postsynaptic neuron','Inhibit NT synthesis'],[1]],
+['Which cells support neurons but cannot conduct impulses?',['Neuroglia','Axons','Dendrites','Neurons'],[0]],
+['Role of dendrites?',['Release neurotransmitters','Form myelin sheath','Receive impulses','Conduct action potentials'],[2]],
+['Which process moves organelles from cell body to axon terminals?',['Neurogenesis','Myelination','Axonal transport','Synaptic transmission'],[2]],
+['Function of oligodendrocytes in the CNS?',['Secrete CSF','Form myelin sheaths','Phagocytize debris','Regulate blood flow'],[1]],
+['Which neurons control voluntary muscle?',['Somatic motor neurons','Sensory neurons','Interneurons','Autonomic motor neurons'],[0]],
+['Primary role of astrocytes?',['Regulate external environment','Form myelin sheaths','Phagocytize debris','Conduct impulses'],[0],'Regulate the neurons\' extracellular environment (K+, glutamate, BBB).'],
+['Which NT is involved in muscle contraction?',['Dopamine','Acetylcholine','GABA','Serotonin'],[1]],
+['Function of the blood-brain barrier?',['Transmit impulses','Regulate body temperature','Store neurotransmitters','Protect brain from toxins'],[3]],
+['Which ion is primarily responsible for depolarization?',['Sodium (Na+)','Calcium (Ca2+)','Chloride (Cl-)','Potassium (K+)'],[0]],
+['What is the all-or-none law?',['AP size varies','Stronger stimulus, larger AP','Threshold reached, AP occurs','AP duration varies'],[2]],
+['Role of myelin in conduction?',['Form synapses','Store NT','Generate impulses','Increase conduction speed'],[3]],
+['Which NT is inhibitory in the spinal cord?',['Dopamine','Glycine','Glutamate','Serotonin'],[1]],
+['Primary excitatory NT in the brain?',['Serotonin','Glycine','GABA','Glutamate'],[3]],
+['Which NT is linked to fight or flight?',['Acetylcholine','Serotonin','Norepinephrine','Dopamine'],[2]],
+['Role of neurotrophins?',['Conduct impulses','Promote neuronal growth','Form myelin','Phagocytize debris'],[1]],
+['Which cells form myelin in the PNS?',['Schwann cells','Oligodendrocytes','Microglia','Astrocytes'],[0]],
+['Primary function of microglia?',['Phagocytize debris','Form myelin','Conduct impulses','Regulate blood flow'],[0]],
+['Which NT is involved in mood regulation?',['Serotonin','GABA','Dopamine','ACh'],[0],'Serotonin is the best answer (dopamine also affects reward/emotion).'],
+['Resting membrane potential of a typical neuron?',['+30 mV','-70 mV','0 mV','-55 mV'],[1],'-55 mV is threshold.']]],
+['Kahoot 2 (harder)',[
+['Which neuron conducts impulses from CNS to target organs?',['Sensory','Association','Motor','Interneurons'],[2]],
+['True or false: during an EPSP, potassium ions flow inward.',['True','False'],[1],'False. EPSP = Na+ influx (K+ leaves in IPSP).'],
+['Select all that apply: role of neuroglia?',['Conduct electrochemical impulses','Support and protect neurons','Release neurotransmitters','Form myelin sheaths'],[1,3],'Glia do not conduct impulses; they support/protect and form myelin (Schwann, oligodendrocytes). Astrocytes release gliotransmitters, but the expected answers are support + myelin.'],
+['Which transport moves organelles from cell body to terminals?',['Retrograde','Anterograde','Passive','Active'],[1],'Anterograde = kinesin. Retrograde = dynein.'],
+['Resting membrane potential?',['+30 mV','-70 mV','0 mV','-55 mV'],[1]],
+['During an EPSP, which ionic movement causes depolarization?',['Net efflux of K+','Net influx of Na+','Net influx of Cl-','Influx of K+ and efflux of Na+'],[1],'Cl- influx and K+ efflux are IPSP.']]],
+['Kahoot 3',[
+['The midbrain forms from the ___',['telencephalon','mesencephalon','myelencephalon','diencephalon'],[1]],
+['The cerebellum forms from the ___',['telencephalon','myelencephalon','metencephalon','diencephalon'],[2],'Metencephalon = pons + cerebellum. Myelencephalon = medulla.'],
+['Dysfunction of ___ neurons limits learning/mimicking dance steps',['sensory','motor','interneurons','mirror neurons'],[3]],
+['Brain metabolism is best studied by ___',['EEG','CT','MRI','PET'],[3]],
+['Chorea is most likely from damage to the ___',['caudate nucleus','premotor cortex','primary motor cortex','insula'],[0]],
+['The basal nuclei include the ___',['supraoptic nucleus','corpus striatum','reticular formation','All correct'],[1]],
+['Individuals with aphasia ___',['often have damage to spinal nerves','may not be able to write if the angular gyrus is damaged','often speak slowly if Wernicke\'s area is damaged','often form nonsensical sentences if the motor speech area is damaged'],[1],'Slow speech = Broca (motor speech); nonsense = Wernicke.'],
+['Word salad occurs when ___',['Wernicke\'s area is damaged','motor speech area is damaged','angular gyrus is damaged','spinal nerves are damaged'],[0]],
+['Alzheimer disease ___',['is improper synaptic transmission','is a genetic disease similar to Parkinson\'s','involves changes in enzyme, protein and lipid activity in the brain','is not associated with lifestyle changes'],[2]],
+['Converting short-term to long-term memory is memory ___',['ablation','consolidation','recognition','translation'],[1]],
+['Learning the physiology memory material uses which memory?',['Implicit','Episodic','Semantic','Procedural'],[2]],
+['An example of working memory is ___',['recognizing a threatening picture','remembering the last hockey game','looking up an address and addressing an envelope','playing a piano song learned as a child'],[2]]]]];
+let ki=0,kq=0,ks=[],kd=false,kc=0;
+function kr(){kq=0;kc=0;ks=[];kd=false;render()}
+function kn(){kq++;ks=[];kd=false;render()}
+function kp(j){if(kd||ks.includes(j))return;const q=K[ki][1][kq];ks.push(j);$('k'+j).classList.add('wrong');if(ks.length<q[2].length)return;kd=true;const ok=ks.every(x=>q[2].includes(x));if(ok)kc++;q[2].forEach(x=>{$('k'+x).classList.remove('wrong');$('k'+x).classList.add('right')});$('kx').innerHTML=(ok?'Correct. ':'Not quite. ')+(q[3]||'')+'<div class="row"><button onclick="kn()">Next</button></div>'}
+function kh(){const set=K[ki][1];const hd=`<div class="row">${K.map((s,i)=>`<button class="${i==ki?'on':''}" onclick="ki=${i};kr()">${s[0]}</button>`).join('')}</div>`;
+if(kq>=set.length){$('v').innerHTML=hd+`<div class="card"><h2>${kc} / ${set.length}</h2><button onclick="kr()">Retry</button></div>`;return}
+const q=set[kq];$('v').innerHTML=hd+`<div class="small">Question ${kq+1} of ${set.length}${q[2].length>1?' (select all that apply)':''}</div><div class="card"><b>${q[0]}</b>${q[1].map((o,j)=>`<button class="opt" id="k${j}" onclick="kp(${j})">${o}</button>`).join('')}<div id="kx" class="small"></div></div>`}
+const BL=[
+['1. Neurons, glia, transport','Divisions of the nervous system, neuron types, cell parts, glia jobs, transport, regeneration',[
+'The two main divisions are the [[central]] and [[peripheral]] nervous systems.',
+'Sensory neurons are [[afferent]]; motor neurons are [[efferent]]; neurons entirely inside the CNS are [[interneurons|interneuron|association]].',
+'Dendrites [[receive]] input; APs start at the axon [[hillock]] and initial segment.',
+'Cell bodies in the CNS = [[nucleus]]; in the PNS = [[ganglion]]. Axons in the CNS = [[tract]]; in the PNS = [[nerve]].',
+'[[Schwann]] cells myelinate PNS axons (one each); [[oligodendrocytes|oligodendrocyte]] myelinate many CNS axons.',
+'[[Astrocytes|astrocyte]] form the blood-brain barrier and take up K+ and glutamate; [[microglia]] phagocytize; [[ependymal]] cells line ventricles.',
+'Anterograde transport uses [[kinesin]]; retrograde uses [[dynein]]. Cells that support but cannot conduct are [[neuroglia|glia]].',
+'PNS regeneration needs the [[neurilemma]] and a Schwann cell regeneration [[tube]]; CNS regrowth is blocked by [[Nogo]].']],
+['2. Membrane potential + action potential','RMP, threshold, channels, phases, refractory, myelin, speed',[
+'Resting potential is about [[-70]] mV, threshold about [[-55]] mV, peak about [[+40|40]] mV.',
+'Depolarization = [[Na+|sodium|na]] influx; repolarization = [[K+|potassium|k]] efflux.',
+'All-or-none: once [[threshold]] is reached, the AP has the same [[amplitude|size]]; intensity is coded by [[frequency]] and the number of neurons.',
+'Absolute refractory period: Na+ channels are [[inactivated|inactive]]; this makes the AP travel in [[one]] direction.',
+'K+ leak channels are always [[open]]; Na+ has [[no]] leak channels, only voltage-gated ones.',
+'Myelinated axons use [[saltatory]] conduction, regenerating the AP at [[nodes of Ranvier|nodes]] every 1-2 mm: about [[100]] m/s vs about [[1]] m/s unmyelinated.']],
+['3. Synapses + potentials','Release steps, EPSP vs IPSP ions, summation, inhibition, gap junctions',[
+'AP arrives, voltage-gated [[Ca2+|calcium]] channels open, [[vesicles]] release NT, NT binds a [[receptor]], producing an EPSP or IPSP.',
+'EPSP: [[Na+|sodium]] or [[Ca2+|calcium]] influx. IPSP: [[Cl-|chloride]] influx or [[K+|potassium]] efflux.',
+'EPSPs are [[graded]], decay with distance, can [[summate|sum]], and have [[no]] refractory period.',
+'Spatial summation = [[many]] presynaptic neurons; temporal = [[one]] neuron firing rapidly; both are summed at the axon [[hillock]].',
+'Divergence: one neuron to [[many]]; convergence: many neurons to [[one]].',
+'Presynaptic inhibition occurs at an [[axoaxonic]] synapse and closes [[Ca2+|calcium]] channels.',
+'Electrical synapses use [[gap junctions]] built from [[connexins|connexin]].']],
+['4. Receptors, ACh + drugs','Ligand vs G-protein, nicotinic vs muscarinic, AChE, drug targets',[
+'Ligand-gated receptors: the receptor [[is]] the channel and acts [[fast]]. G-protein receptors act [[slow]] and use second messengers.',
+'G-protein cycle: ligand binds, alpha swaps [[GDP]] for [[GTP]], alpha [[dissociates]], then acts on a channel or enzyme.',
+'Nicotinic receptors are [[ligand-gated]] (skeletal muscle [[end plate]]), blocked by [[curare]]. Muscarinic are [[G-protein]] coupled, blocked by [[atropine]].',
+'In the heart, muscarinic M2 opens [[K+|potassium]] channels and [[slows]] the heart rate (vagus).',
+'[[Acetylcholinesterase|AChE]] breaks down ACh; inhibitors such as [[neostigmine]] treat myasthenia gravis, where antibodies attack [[nicotinic]] receptors.',
+'Botulinum toxin [[blocks|inhibits]] ACh release; strychnine blocks [[glycine]] receptors; tetrodotoxin blocks [[Na+|sodium]] channels.']],
+['5. Neurotransmitters','Monoamines, amino acids, peptides, gases, endocannabinoids',[
+'Monoamines: dopamine, [[norepinephrine]], [[serotonin]], [[histamine]].',
+'Loss of substantia nigra dopamine neurons causes [[Parkinson|parkinsons|parkinson disease]]; excess mesolimbic dopamine is linked to [[schizophrenia]].',
+'MAOIs block [[monoamine oxidase|MAO]]; SSRIs block serotonin [[reuptake]]; norepinephrine drives [[fight or flight|fight-or-flight]].',
+'Glutamate is the main [[excitatory]] NT (receptors [[NMDA]] and [[AMPA]]); GABA is the main [[inhibitory]] NT in the brain; [[glycine]] in the spinal cord.',
+'Loss of GABA neurons causes [[Huntington|huntingtons|huntington disease]].',
+'NO is made from [[L-arginine|arginine]] and activates [[cGMP]]; Viagra blocks cGMP [[breakdown]].',
+'Endocannabinoids (e.g. [[2-AG]]) are [[retrograde]] messengers that suppress [[GABA]] release.',
+'[[Substance P]] = pain; [[CCK]] = fullness; NPY stimulates [[hunger|appetite]] and is inhibited by [[leptin]]; opioids include [[endorphins|enkephalins|dynorphins]].']],
+['6. Plasticity + memory','LTP vs LTD, memory types, brain regions, neurogenesis',[
+'LTP: a [[rapid|fast]] large rise in [[Ca2+|calcium]], [[AMPA]] receptors inserted, spines [[enlarge]].',
+'LTD: a small [[prolonged|slow]] Ca2+ rise, AMPA receptors [[removed]], spines [[shrink]].',
+'NMDA receptors are blocked by [[Mg2+|magnesium]] until the membrane depolarizes.',
+'Key memory structure: [[hippocampus]]. Converting short-term to long-term memory is [[consolidation]] (the [[amygdala|amygdaloid body]] helps).',
+'Declarative memory = [[semantic]] (facts) and [[episodic]] (events); nondeclarative includes [[procedural]] skills (basal nuclei, cerebellum).',
+'Working memory depends on the [[prefrontal]] cortex and lasts seconds to minutes.',
+'Adult neurogenesis: the [[subventricular]] zone (to striatum) and the [[subgranular]] zone of the hippocampus.',
+'Alzheimer disease involves changes in [[enzyme]], [[protein]], and lipid activity.']],
+['7. Embryology + CSF','Neural tube, five vesicles and their derivatives, CSF path',[
+'The neural tube forms from [[ectoderm]] about day [[20]]; the neural crest becomes [[PNS]] ganglia.',
+'Prosencephalon splits into [[telencephalon]] and [[diencephalon]]; rhombencephalon splits into [[metencephalon]] and [[myelencephalon]].',
+'Telencephalon becomes [[cerebral hemispheres]] and [[lateral]] ventricles; diencephalon becomes [[thalamus]], [[hypothalamus]] and the [[third]] ventricle.',
+'Mesencephalon becomes the [[midbrain]] and [[cerebral aqueduct]]; metencephalon becomes [[pons]] and [[cerebellum]]; myelencephalon becomes the [[medulla]].',
+'CSF path: choroid plexus, lateral ventricles, [[interventricular foramina]], third ventricle, [[cerebral aqueduct]], fourth ventricle, central canal or [[subarachnoid]] space, [[arachnoid villi]], blood.',
+'CSF is made by [[secretion]] not filtration, by the choroid plexus ([[ependymal]] cells around capillaries).']],
+['8. Cerebrum + language','Lobes, gyri, speech areas, lateralization, mirror neurons',[
+'The cerebrum is about [[80]]% of brain mass; hemispheres are joined by the [[corpus callosum]].',
+'Gyri are [[folds|ridges]]; sulci are [[grooves]]. The central sulcus separates the [[frontal]] and [[parietal]] lobes.',
+'Precentral gyrus = primary [[motor]] cortex; postcentral gyrus = [[somatosensory|sensory]] cortex.',
+'Frontal = [[motor]]; parietal = [[sensory|somatosensory]]; temporal = [[hearing|auditory]]; occipital = [[vision]]; [[insula]] = taste/visceral.',
+'Broca area: speech [[production]]; damage = [[nonfluent|slow]] speech with intact comprehension. Wernicke area: [[comprehension]]; damage = word [[salad]].',
+'Angular gyrus damage affects [[reading]] and writing; the arcuate fasciculus links Wernicke area to [[Broca]] area.',
+'Left hemisphere: [[language]]; right: [[visuospatial|spatial]]. Each side controls the [[opposite|contralateral]] body side.',
+'Mirror neurons (frontal + parietal) help copy actions and are linked to [[autism]].']],
+['9. Basal nuclei + limbic system','Structures, filter role, motor circuit, disorders',[
+'Basal nuclei: [[claustrum]] and the corpus striatum = [[caudate]] nucleus + lentiform nucleus (= [[putamen]] + [[globus pallidus]]).',
+'They act as a [[filter]] for motor commands; the initial signal is [[jerky]] and they apply the [[brakes]].',
+'The substantia nigra supplies [[dopamine]]. Chorea (Huntington) = damage to the [[caudate]] nucleus.',
+'Limbic system: [[hippocampus]], [[amygdala|amygdaloid body]], [[cingulate gyrus]], [[fornix]], hypothalamus; roles: emotion, memory and [[motivation]].']],
+['10. Imaging + sleep','Imaging tools, EEG waves, sleep stages and NTs',[
+'Brain metabolism: [[PET]]. Blood flow (BOLD): [[fMRI]]. Magnetic fields with SQUIDs: [[MEG]]. X-ray absorption: [[CT]].',
+'EEG: alpha = [[relaxed|awake relaxed]]; beta = [[active|busy]]; theta = [[REM]]; delta = [[deep|slow-wave]] sleep (abnormal if awake).',
+'[[Histamine]] promotes wakefulness; [[adenosine]] and GABA promote sleep. A sleep cycle is about [[90]] minutes, about [[5]] per night.',
+'REM supports [[nondeclarative]] memory; non-REM supports [[declarative]] memory; the [[glymphatic]] system clears waste in deep sleep.']]];
+let bs=0,bst=0,bt={};
+function cz(l){return l.split('[[').map((p,i)=>{if(!i)return p;const j=p.indexOf(']]'),a=p.slice(0,j);return `<input class="bi" data-a="${a}" style="width:${Math.max(7,a.split('|')[0].length+3)}ch" autocomplete="off" autocapitalize="off" spellcheck="false">`+p.slice(j+2)}).join('')}
+function bc(rev){let r=0,t=0;document.querySelectorAll('.bi').forEach(i=>{const al=i.dataset.a.toLowerCase().split('|');t++;if(rev&&!al.includes(i.value.trim().toLowerCase()))i.value=al[0];const ok=al.includes(i.value.trim().toLowerCase());if(ok)r++;i.className='bi '+(ok?'right':'wrong');i.title=ok?'':'Answer: '+al[0]});S.b=S.b||{};if(!rev){S.b[bs]=Math.max(S.b[bs]||0,Math.round(100*r/t));save()}$('bsc').innerHTML=rev?'Answers revealed.':`Score: <b>${r} / ${t}</b>. Red blanks: tap them to see the answer in the tooltip, or Reveal.`}
+function bl(){const s=BL[bs],b=S.b||{};
+const hd=`<div class="row">${BL.map((x,i)=>`<button class="${i==bs?'on':''}" onclick="bs=${i};bst=0;render()">${i+1}${b[i]!=null?' · '+b[i]+'%':''}</button>`).join('')}</div>`;
+if(bst==0)$('v').innerHTML=hd+`<div class="card"><div class="tag">Step 1 · Blurt</div><h3 style="margin-top:0">${s[0]}</h3><p>Close your notes. Write everything you can remember about: <b>${s[1]}</b>. Include terms, ions, structures, and examples.</p><textarea class="bt" oninput="bt[bs]=this.value" placeholder="Blurt it all out here...">${bt[bs]||''}</textarea><div class="row"><button class="on" onclick="bst=1;render()">Done blurting: test my details →</button></div></div>`;
+else $('v').innerHTML=hd+`<div class="card"><div class="tag">Step 2 · Fill the blanks</div><h3 style="margin-top:0">${s[0]}</h3><div class="small">Type the missing terms, then check. Compare against your blurt: what did you leave out?</div>${s[2].map(l=>`<div class="bl">• ${cz(l)}</div>`).join('')}<div class="row"><button class="on" onclick="bc(0)">Check</button><button onclick="bc(1)">Reveal all</button><button onclick="bst=0;render()">← Blurt again</button>${bs<BL.length-1?'<button onclick="bs++;bst=0;render()">Next section →</button>':''}</div><div id="bsc" class="small"></div></div>`}
+let prev='fc';
+function doS(){const v=$('q').value.trim();if(v){if(tab!='se')prev=tab;tab='se'}else if(tab=='se')tab=prev;render()}
+function se(){const v=$('q').value.trim().toLowerCase(),ts=v.split(' ').filter(Boolean);
+const ok=t=>{t=t.toLowerCase();return ts.every(w=>t.includes(w))};
+const hl=t=>{let o='',lo=t.toLowerCase(),i=0;while(i<t.length){let ml=0;for(const w of ts)if(lo.startsWith(w,i)&&w.length>ml)ml=w.length;if(ml){o+='<mark>'+t.substr(i,ml)+'</mark>';i+=ml}else{o+=t[i];i++}}return o};
+const cs=C.filter(c=>ok(c[0]+' '+c[2]+' '+c[3])),ns=N.filter(n=>ok(n[0]+' '+n[1].replace(/<[^>]+>/g,' '))),ds=D.filter(r=>ok(r.join(' '))),ps=P.filter(p=>ok(p.join(' '))),qs=Q.filter(q=>ok(q[0]+' '+q[1].join(' ')+' '+q[3])),ks=[];
+K.forEach(s=>s[1].forEach(q=>{if(ok(q[0]+' '+q[1].join(' ')+' '+(q[3]||'')))ks.push([s[0],q])}));
+const n=cs.length+ns.length+ds.length+ps.length+qs.length+ks.length;
+let h=`<div class="small">${n} results for <b>${v}</b> in flashcards, notes, drugs, SG questions and quizzes</div>`;
+if(!n)h+='<div class="card">No matches. Try a shorter word or a different spelling (e.g. "EPSP", "Na+", "astrocyte").</div>';
+if(cs.length)h+=`<h3>Flashcards (${cs.length})</h3>`+cs.map(c=>`<div class="card"><div class="tag">${c[1]?'<span class="star">★ </span>':''}${sg(c)?'<span class="star" style="color:var(--ok)">SG </span>':''}${c[0]}</div><b>${hl(c[2])}</b><div>${hl(c[3])}</div></div>`).join('');
+if(ns.length)h+=`<h3>Notes, tables + flowcharts (${ns.length})</h3>`+ns.map(x=>`<details class="card" open><summary>${hl(x[0])}</summary>${x[1].replace(/>([^<]+)</g,(m,t)=>'>'+hl(t)+'<')}</details>`).join('');
+if(ds.length)h+=`<h3>Drugs (${ds.length})</h3><div class="card"><table>${ds.map(r=>`<tr>${r.map(c=>`<td>${hl(c)}</td>`).join('')}</tr>`).join('')}</table></div>`;
+if(ps.length)h+=`<h3>Study guide questions (${ps.length})</h3>`+ps.map(p=>`<details class="card" open><summary>${hl(p[0])}</summary><p>${hl(p[1])}</p></details>`).join('');
+if(ks.length)h+=`<h3>Kahoot questions (${ks.length})</h3>`+ks.map(([s,q])=>`<div class="card"><div class="tag">${s}</div><b>${hl(q[0])}</b><ul>${q[1].map((o,j)=>q[2].includes(j)?`<li><b>✓ ${hl(o)}</b></li>`:`<li>${hl(o)}</li>`).join('')}</ul>${q[3]?`<div class="small">${hl(q[3])}</div>`:''}</div>`).join('');
+if(qs.length)h+=`<h3>Quiz questions (${qs.length})</h3>`+qs.map(q=>`<div class="card"><b>${hl(q[0])}</b><ul>${q[1].map((o,j)=>j==q[2]?`<li><b>✓ ${hl(o)}</b></li>`:`<li>${hl(o)}</li>`).join('')}</ul><div class="small">${hl(q[3])}</div></div>`).join('');
+$('v').innerHTML=h}
+function nt(){$('v').innerHTML='<p class="small">Tap a section to open. These tables and flowcharts follow the slide order; ★ marks red-ink items.</p>'+N.map(n=>`<details class="card"><summary>${n[0]}</summary>${n[1]}</details>`).join('')}
+render();
+</script></body></html>
